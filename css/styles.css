@@ -226,6 +226,10 @@ p {
   background: #f5f4fa;
 }
 
+.title.customers {
+  margin-bottom: 50px;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.16;
@@ -513,7 +517,6 @@ p {
   display: flex;
   width: 44px;
   height: 44px;
-  flex-direction: row;
   border-radius: 50%;
   gap: 22px;
   background-color: transparent;
@@ -535,4 +538,73 @@ p {
 .social-icons:focus {
   fill: #ffffff;
   background-color: #2196f3;
+}
+
+.customers-list.icons {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.regular-customers.icons {
+  fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company-icons {
+  fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 170px;
+  height: 92px;
+}
+
+.regular-customers.icons:hover,
+.regular-customers.icons:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.company-icons:hover,
+.company-icons:focus {
+  fill: #2196f3;
+  border: transparent;
+}
+
+.call-to-action {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.container.footer {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.footer.socials-iist {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+}
+
+.footer.social-icons {
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer.social-icons:hover,
+.footer.social-icons:focus {
+  background: #2196f3;
 }
