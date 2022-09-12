@@ -262,6 +262,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 
 .team-wrapper {
@@ -489,7 +490,9 @@ p {
 
 /*Icons CSS*/
 
-.icons-header {
+.icons-header,
+.social-icons,
+.social-iist {
   fill: currentColor;
 }
 
@@ -498,19 +501,38 @@ p {
   width: 270px;
   height: 120px;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  gap: 30px;
+  align-items: center;
 }
 
 .social-icons {
-  list-style: none;
   display: flex;
   width: 44px;
   height: 44px;
-  margin-top: 16px;
-  flex-direction: column;
-  background-color: white, circle;
+  flex-direction: row;
+  border-radius: 50%;
+  gap: 22px;
+  background-color: transparent;
+  fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-iist {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
 }
