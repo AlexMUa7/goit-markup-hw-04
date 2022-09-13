@@ -178,6 +178,7 @@ p {
   min-width: 216px;
   height: 50px;
   border: none;
+  cursor: pointer;
 }
 
 .button.primary:hover,
@@ -317,7 +318,7 @@ p {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background-picture.jpg), url(../images/background-overlay.jpg);
+    url(../images/background-picture.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -547,36 +548,27 @@ p {
 .customers-list.icons {
   display: flex;
   gap: 30px;
-  list-style: none;
-}
-
-.regular-customers.icons {
-  fill: #afb1b8;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .company-icons {
-  fill: #afb1b8;
+  color: #afb1b8;
   align-items: center;
   justify-content: center;
   display: flex;
   width: 170px;
   height: 92px;
-}
-
-.regular-customers.icons:hover,
-.regular-customers.icons:focus {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .company-icons:hover,
-.company-icons:focus {
-  fill: #2196f3;
-  border: transparent;
+.company-icon:focus {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.items-clients {
+  fill: currentColor;
 }
 
 .call-to-action {
@@ -586,6 +578,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .container.footer {
@@ -604,6 +597,8 @@ p {
 }
 
 .footer.social-icons {
+  display: flex;
+  gap: 10px;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
@@ -611,4 +606,9 @@ p {
 .footer.social-icons:hover,
 .footer.social-icons:focus {
   background: #2196f3;
+}
+
+.footer.socials-icon.list {
+  display: flex;
+  gap: 10px;
 }
